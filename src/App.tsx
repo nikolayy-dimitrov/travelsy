@@ -1,6 +1,8 @@
 import { Navbar } from "./components/Navbar.tsx";
 import { Home } from "./screens/Home.tsx";
-import {AboutUs} from "./screens/AboutUs.tsx";
+import { AboutUs } from "./screens/AboutUs.tsx";
+import { BookingScreen } from "./screens/BookingScreen.tsx";
+import { VenueScreen } from "./screens/VenueScreen.tsx";
 
 function App() {
 
@@ -10,6 +12,8 @@ function App() {
         <div>
             <Home />
             <AboutUs />
+            <BookingScreen />
+            <VenueScreen />
         </div>
     </div>
   )
