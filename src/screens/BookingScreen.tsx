@@ -148,42 +148,46 @@ export const BookingScreen: React.FC = () => {
     ];
 
     return (
-        <section id="booking" className="bg-gradient-to-b from-primary-100/15 to-white w-full z-10">
+        <section id="booking" className="relative bg-gradient-to-b from-primary-100/15 to-white w-full z-10 overflow-hidden">
             <div className="w-[80%] mx-auto">
                 <div className="flex flex-col items-center justify-center pt-24">
                     <h3 className="font-Grypen text-2xl text-primary-100">
                         Top Destinations
                     </h3>
-                    <h2 className="font-SpaceGrotesk font-bold text-4xl leading-tight">
+                    <h2 className="max-md:text-center font-SpaceGrotesk font-bold text-4xl leading-tight">
                         Popular Hotels For Booking
                     </h2>
                 </div>
-                <div className="flex items-center justify-center mt-12 gap-6">
+                <div className="lg:flex max-lg:space-y-4 items-center justify-center mt-12 gap-6">
                     {visibleHotels.map((hotel, index) => (
-                        <HotelCard key={index} hotel={hotel} />
+                        <HotelCard key={index} hotel={hotel}/>
                     ))}
                 </div>
                 <div className="flex items-center justify-center mt-12 pb-12 text-primary-100">
-                    <div className="bg-white rounded-full py-2 items-center flex px-4 space-x-4 shadow-lg shadow-gray-300">
+                    <div
+                        className="bg-white rounded-full py-2 items-center flex px-4 space-x-4 shadow-lg shadow-gray-300">
                         <button onClick={prevSlide}>
-                            <IconArrowLeft />
+                            <IconArrowLeft/>
                         </button>
                         <button onClick={nextSlide}>
-                            <IconArrowRight />
+                            <IconArrowRight/>
                         </button>
                     </div>
                 </div>
             </div>
+            <div
+                className="absolute right-0 -z-10
+                    bg-gradient-to-b from-primary-100 to-white w-[203px] h-[545px] rotate-45"></div>
             <div className="flex items-center justify-center mt-24 mx-auto relative pb-20">
                 {/* Background Image */}
                 <div className="z-0 absolute inset-0 max-lg:hidden">
-                    <img src={ MapBG } className="object-cover w-full h-full" />
+                    <img src={MapBG} className="object-cover w-full h-full"/>
                 </div>
 
                 {/* Content */}
                 <div className="z-10 lg:flex gap-8 max-lg:space-y-8 mt-32">
                     {bonusData.map((info, index) => (
-                        <BonusInfoCard key={index} bonusInfo={info} />
+                        <BonusInfoCard key={index} bonusInfo={info}/>
                     ))}
                 </div>
             </div>

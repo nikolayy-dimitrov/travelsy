@@ -3,6 +3,8 @@ import { Home } from "./screens/Home.tsx";
 import { AboutUs } from "./screens/AboutUs.tsx";
 import { BookingScreen } from "./screens/BookingScreen.tsx";
 import { VenueScreen } from "./screens/VenueScreen.tsx";
+import { CallToActionBanner } from "./screens/CallToActionBanner.tsx";
+import { NewsScreen } from "./screens/NewsScreen.tsx";
 
 function App() {
 
@@ -14,6 +16,8 @@ function App() {
             <AboutUs />
             <BookingScreen />
             <VenueScreen />
+            <CallToActionBanner />
+            <NewsScreen />
         </div>
     </div>
   )
