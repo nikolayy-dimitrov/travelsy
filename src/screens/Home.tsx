@@ -3,6 +3,7 @@ import HeroImgTop from "../assets/Hero Image 1.png";
 import HeroImgBot from "../assets/Hero Image 2.png";
 import HeroImgRight from "../assets/Hero Image 3.png";
 import { IconCalendarEvent, IconSend } from "@tabler/icons-react";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 export const Home = () => {
     return (
@@ -36,7 +37,7 @@ export const Home = () => {
                     <button
                         className="bg-primary-100 font-Mulish font-extrabold text-white md:px-6 max-md:px-2 py-3 rounded-full flex space-x-2 items-center hover:brightness-105"
                     >
-                        <span>Make Reservation</span>
+                        <AnchorLink href="/booking"><span>Make Reservation</span></AnchorLink>
                         <IconCalendarEvent size={24} />
                     </button>
                 </div>
@@ -44,9 +45,9 @@ export const Home = () => {
                 {/* Image Section */}
                 <div className="relative flex flex-col items-center space-y-4 overflow-hidden">
                     <div className="grid grid-cols-2 gap-4 max-md:hidden">
-                        <img src={HeroImgTop} alt="Top Image" className="object-cover rounded-lg" />
-                        <img src={HeroImgRight} alt="Right Image" className="object-cover rounded-lg row-span-2 mt-20" />
-                        <img src={HeroImgBot} alt="Bottom Image" className="object-cover rounded-lg" />
+                        <img src={ HeroImgTop } alt="Top Image" className="object-cover rounded-lg" />
+                        <img src={ HeroImgRight } alt="Right Image" className="object-cover rounded-lg row-span-2 mt-20" />
+                        <img src={ HeroImgBot } alt="Bottom Image" className="object-cover rounded-lg" />
                     </div>
 
                     {/* Circular Element */}

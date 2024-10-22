@@ -5,7 +5,7 @@ import AboutImageTraveller from "../assets/AboutImage3.jpg";
 
 export const AboutUs = () => {
     return (
-        <section id="about" className="relative overflow-hidden flex flex-col items-center justify-center mb-20">
+        <section id="aboutus" className="relative overflow-hidden flex flex-col items-center justify-center mb-20">
             <div className="bg-white shadow-2xl shadow-gray-300 max-lg:rounded-2xl lg:rounded-full px-8 py-6 w-[80%] max-md:w-[80%] max-lg:w-[40%]">
                 <form className="lg:flex max-lg:space-y-4 gap-4 justify-between">
                     <input

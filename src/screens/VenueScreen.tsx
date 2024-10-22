@@ -75,7 +75,7 @@ export const VenueScreen: React.FC = () => {
     ];
 
     return (
-        <section id="booking" className="bg-gradient-to-b from-primary-100/15 to-white w-full z-10">
+        <section id="venue" className="bg-gradient-to-b from-primary-100/15 to-white w-full z-10">
             {/* Events */}
             <div className="w-[80%] max-md:w-[50%] mx-auto">
                 <div className="flex flex-col items-center justify-center pt-24">

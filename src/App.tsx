@@ -5,6 +5,7 @@ import { BookingScreen } from "./screens/BookingScreen.tsx";
 import { VenueScreen } from "./screens/VenueScreen.tsx";
 import { CallToActionBanner } from "./screens/CallToActionBanner.tsx";
 import { NewsScreen } from "./screens/NewsScreen.tsx";
+import { Footer } from "./components/Footer.tsx";
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
             <CallToActionBanner />
             <NewsScreen />
         </div>
+        <Footer />
     </div>
   )
 }

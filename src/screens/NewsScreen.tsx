@@ -54,7 +54,7 @@ const BlogPostCard: React.FC<BlogPostCardProps> = ({ post }) => (
 
 export const NewsScreen = () => {
     return (
-        <section id="news" className="overflow-hidden relative">
+        <section id="news" className="overflow-hidden relative pb-8">
             <div
                 className="absolute right-0 -z-10 mt-20
                     bg-gradient-to-b from-primary-100 to-white w-[203px] h-[645px] rotate-45"></div>
