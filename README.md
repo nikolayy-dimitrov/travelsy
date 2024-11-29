@@ -1,5 +1,5 @@
 # Travelsy Demo
-[Live preview](https://travelsy-agency.netlify.app/)
+[Live Preview](https://travelsy.nikolay-dimitrov.xyz/)
 
 ## Overview
 Travelsy is a clean and responsive single-page application (SPA) built as a landing page to showcase content in an engaging and visually appealing way.
